@@ -1,72 +1,70 @@
 <!DOCTYPE html>
 <html lang="">
 <head>
-  <meta charset="utf-8">  
+  <meta charset="utf-8">
   <title>Windows 11 Desktop</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="desktop">
     <div class="desktop-grid">
-      <button class="desktop-icon" data-app="notepad">  
+      <button class="desktop-icon" data-app="notepad">
         <span class="icon-glyph">N</span>
         <span class="icon-label">Notepad</span>
       </button>
       <button class="desktop-icon" data-app="paint">
         <span class="icon-glyph">P</span>
         <span class="icon-label">Paint</span>
-      </button>  
+      </button>
     </div>
     <div class="window" id="notepad-window" data-app-id="notepad">
       <div class="window-header">
         <span class="window-title">Notepad</span>
         <div class="window-controls">
           <button class="control-btn minimize-btn" aria-label="Minimize"></button>
-          <button class="control-btn maximize-btn" aria-label="Maximize"></button>  
+          <button class="control-btn maximize-btn" aria-label="Maximize"></button>
           <button class="control-btn close-btn" aria-label="Close"></button>
         </div>
       </div>
       <div class="window-body">
         <textarea class="notepad-textarea" placeholder="Type something..."></textarea>
       </div>
-      <div class="window-resize-handle"></div>  
+      <div class="window-resize-handle"></div>
     </div>
     <div class="window" id="paint-window" data-app-id="paint">
       <div class="window-header">
         <span class="window-title">Paint</span>
         <div class="window-controls">
           <button class="control-btn minimize-btn" aria-label="Minimize"></button>
-          <button class="control-btn maximize-btn" aria-label="Maximize"></button>  
+          <button class="control-btn maximize-btn" aria-label="Maximize"></button>
           <button class="control-btn close-btn" aria-label="Close"></button>
         </div>
       </div>
       <div class="window-body paint-body">
         <div class="paint-toolbar">
           <button class="paint-tool active" data-tool="brush">Brush</button>
-          <button class="paint-tool" data-tool="eraser">Eraser</button>  
+          <button class="paint-tool" data-tool="eraser">Eraser</button>
           <button class="paint-clear">Clear</button>
         </div>
         <canvas class="paint-canvas" width="400" height="250"></canvas>
       </div>
       <div class="window-resize-handle"></div>
     </div>
-    <div class="taskbar">  
+    <div class="taskbar">
       <div class="taskbar-center">
         <button class="taskbar-start" aria-label="Start Menu">
           <span class="start-glyph"></span>
         </button>
         <div class="taskbar-apps">
           <button class="taskbar-app" data-app-target="notepad">Notepad</button>
-          <button class="taskbar-app" data-app-target="paint">Paint</button>  
+          <button class="taskbar-app" data-app-target="paint">Paint</button>
         </div>
       </div>
       <div class="taskbar-tray">
         <span class="tray-time">12:00 PM</span>
       </div>
     </div>
-  </div>  
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
-
-
